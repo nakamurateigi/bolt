@@ -10,8 +10,13 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   position: fixed;
+  z-index: 30;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,14 +25,6 @@ body {
 
 .header-inner {
   padding: 15px 0;
-}
-
-ul {
-  margin-right: 0px;
-}
-
-li {
-  display: inline-block;
 }
 
 .bolt {
@@ -48,12 +45,14 @@ li {
   color: #333;
 }
 
-.header-li-left {
+.header-left {
   float: left;
+  display: inline-block;
 }
 
-.header-li-right {
+.header-right {
   float: right;
+  display: inline-block;
 }
 
 .clearfix::after {
@@ -63,7 +62,7 @@ li {
 }
 
 .main {
-  margin-top: 72px;
+  padding-top: 72px;
 }
 
 .theme {
@@ -88,23 +87,24 @@ li {
   color: #c0c0c0;
 }
 
-.section-1 {
+.iphone {
   background-color: #74cfae;
   text-align: center;
-  padding-top: 50px;
   font-size: 0;
 }
 
-.section-1-box {
+.iphone-inner {
   display: flex;
+  padding-top: 50px;
 }
 
-.section-1-figure {
+.iphone-figure {
   display: inline-block;
-  padding: 0 70px;
+  width: 348px;
+  text-align: center;
 }
 
-.section-1-block {
+.iphone-block {
   display: inline-block;
   padding: 0 70px;
   vertical-align: top;
@@ -112,14 +112,14 @@ li {
   flex: 1;
 }
 
-.section-1-heading {
+.iphone-heading {
   font-size: 24px;
   color: #FFFFFF;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   display: inline-block;
 }
 
-.section-1-state {
+.iphone-sentence {
   font-size: 20px;
   color: #FFFFFF;
 }
@@ -128,12 +128,11 @@ li {
   width: 100%;
   background-color: #f2f2f2;
   margin: auto;
-  padding-top: 60px;
-  padding-bottom: 70px;
 }
 
 .work-inner {
   text-align: center;
+  padding: 60px 0 70px 0;
 }
 
 .work-heading {
@@ -144,26 +143,14 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-bottom: 90px; 
+  margin-bottom: 90px;
 }
 
 .work-img figure {
-  margin: 0px 50px;
+  margin-right: 100px;
 }
 
-.work-img figure:first-child {
-  margin-left:0px;
-}
-
-.work-img figure:nth-child(3) {
-  margin-right:0px;
-}
-
-.work-img figure:nth-child(4) {
-  margin-left:0px;
-}
-
-.work-img figure:last-child {
+.work-img figure:nth-child(3n) {
   margin-right:0px;
 }
 
@@ -183,10 +170,10 @@ li {
 .mail-block {
   display: flex;
   align-items: center;
-  margin: 90px;
+  /*margin: 90px;*/
 }
 
-.mail-block-state{
+.mail-block-sentence{
   display: inline-block;
   font-size: 16px;
   width: 100%;
@@ -209,51 +196,54 @@ li {
   color: #333;
 }
 
-.section-2 {
+.skills {
   background-color: #4e4e4e;
 }
 
-.section-2-box {
+.skills-box {
   text-align: center;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
-.section-2-heading {
+.skills-heading {
   font-size: 24px;
   color: #FFFFFF;
-  padding: 70px 0px;
+  margin-bottom: 70px;
 }
 
-.section-2-box figure {
+.skills-box figure {
   display: inline-block;
-  margin: 0px 90px;
+  margin-right: 180px;
 }
 
-.section-2-box figure:nth-child(2) {
-  margin-left: 0px;
-}
-
-.section-2-box figure:last-child {
+.skills-box figure:last-child {
   margin-right: 0px;
 }
 
-.section-2-box p {
+.skills-box p {
+  margin-top: 10px;
   font-size: 16px;
   color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
 }
 
 .sns-contents {
   width: 100%;
   background-color: #f2f2f2;
+  padding: 200px 0px;
 }
 
 .sns-contents-ul {
   text-align: center;
-  padding: 200px 0px;
+}
+
+.sns-contents-ul li {
+  display: inline-block;
 }
 
 .icon {
-  display: inline-block;
+  display: block;
   width: 185px;
   font-size: 42px;
   color: #74cfae;
