@@ -3,11 +3,323 @@ body {
   font-family: 'Raleway','Lato', sans-serif;
 }
 
+@media (max-width: 767px){
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .header-bar {
+    cursor: pointer;
+    text-align: center;
+    border: solid 1px #ddd;
+    position: absolute;
+    border-radius: 4px;
+    right: 0%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 10px;
+  }
+
+  
+  .header-bar-menu {
+    height: 14px;
+    width: 20px;
+    line-height: 10px;
+    position: relative;
+  }
+  
+  .header-bar-menu div {
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    border-radius: 3px;
+    background: #ddd;
+  }
+
+  .header-bar-menu div:nth-of-type(1) {
+    top: 0px;
+  }
+
+  .header-bar-menu div:nth-of-type(2) {
+    top: 6px;
+  }
+
+  .header-bar-menu div:nth-of-type(3) {
+    bottom: 0px;
+  }
+
+  .theme-inner {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .theme-inner-bolt {
+    font-size: 80px;
+  }
+
+  .iphone-figure {
+    display: inline-block;
+  }
+
+  .iphone-inner {
+    padding-top: 50px;
+  }
+
+  .iphone-block {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #FFFFFF;
+  }
+
+  .iphone-heading {
+    padding-bottom: 35px;
+  }
+
+  .work-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .work-img figure:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  
+  .work-img figure:last-child {
+    margin-bottom: 0px;
+  }
+
+  .mail-block-sentence{
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-box figure {
+    margin-bottom: 88px;
+  }
+
+  .skills-box figure:last-child {
+    margin-bottom: 0px;
+  }
+
+  .sns-contents-ul {
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  } 
+
+  .icon {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px){
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .header-button {
+    display: inline-block;
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    color: #FFFFFF;
+    border: none;
+    transition-duration: 0.3s;
+  }
+
+  .theme-inner {
+    padding: 250px 0;
+  }
+
+  .theme-inner-bolt {
+    font-size: 90px;
+  }
+
+  .iphone-figure {
+    display: inline-block;
+  }
+
+  .iphone-inner {
+    padding-top: 50px;
+  }
+
+  .iphone-block {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #FFFFFF;
+  }
+
+  .iphone-heading {
+    padding-bottom: 35px;
+  }
+
+  .work-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .work-img figure:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+  
+  .work-img figure:last-child {
+    margin-bottom: 0px;
+  }
+
+  .mail-block-sentence{
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-box figure {
+    margin-bottom: 88px;
+  }
+
+  .skills-box figure:last-child {
+    margin-bottom: 0px;
+  }
+
+  .sns-contents-ul {
+    text-align: center;
+    padding: 200px 0px;
+  }  
+
+  .icon {
+    width: 185px;
+  }
+
+}
+
 @media (min-width: 1200px){
   .inner {
     width: 1100px;
     margin: 0 auto;
   }
+
+  .header-button {
+    display: inline-block;
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    color: #FFFFFF;
+    border: none;
+    transition-duration: 0.3s;
+  }
+
+  .theme-inner {
+    padding: 250px 0;
+  }
+
+  .theme-inner-bolt {
+    font-size: 90px;
+  }
+
+  .iphone {
+    font-size: 0;
+  }
+  
+  .iphone-inner {
+    display: flex;
+    padding-top: 50px;
+  }
+  
+  .iphone-figure {
+    display: inline-block;
+    width: 348px;
+    text-align: center;
+  }
+  
+  .iphone-block {
+    display: inline-block;
+    padding: 0 70px;
+    vertical-align: top;
+    box-sizing: border-box;
+    flex: 1;
+    color: #FFFFFF;
+  }
+  
+  .iphone-heading {
+    margin-bottom: 35px;
+  }
+
+  .work-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+  
+  .work-img figure {
+    margin-right: 100px;
+    margin-bottom: 80px;
+  }
+  
+  .work-img figure:nth-child(3n) {
+    margin-right: 0px;
+  }
+  
+  .work-img figure:nth-last-child(-n+3){
+    margin-bottom: 0;
+  }
+  
+  .mail-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mail-block-sentence{
+    display: inline-block;
+    flex: 1;
+    margin-right: 90px;
+  }
+
+  .skills-box figure {
+    display: inline-block;
+    margin-right: 180px;
+  }
+  
+  .skills-box figure:last-child {
+    margin-right: 0px;
+  }
+
+  .sns-contents-ul {
+    text-align: center;
+    padding: 200px 0px;
+  }  
+
+  .icon {
+    width: 185px;
+  }
+  
 }
 
 a {
@@ -31,16 +343,6 @@ a {
   font-size: 42px;
 }
 
-.header-button {
-  display: inline-block;
-  font-size: 12px;
-  padding: 14px 12px;
-  background-color: #74cfae;
-  color: #FFFFFF;
-  border: none;
-  transition-duration: 0.3s;
-}
-
 .header-button:hover {
   color: #333;
 }
@@ -53,6 +355,10 @@ a {
 .header-right {
   float: right;
   display: inline-block;
+}
+
+.clearfix {
+  position: relative;
 }
 
 .clearfix::after {
@@ -71,12 +377,12 @@ a {
 }
 
 .theme-inner {
-  padding: 250px 0;
+  /*padding: 250px 0;*/
   text-align: center;
 }
 
 .theme-inner-bolt {
-  font-size: 90px;
+  /*font-size: 90px;*/
   font-weight: 700;
   color: #74cfae;
   margin-bottom: 20px;
@@ -87,12 +393,12 @@ a {
   color: #c0c0c0;
 }
 
+
 .iphone {
   background-color: #74cfae;
   text-align: center;
-  font-size: 0;
 }
-
+/*
 .iphone-inner {
   display: flex;
   padding-top: 50px;
@@ -111,17 +417,13 @@ a {
   box-sizing: border-box;
   flex: 1;
 }
-
+*/
 .iphone-heading {
   font-size: 24px;
-  color: #FFFFFF;
-  margin-bottom: 35px;
-  display: inline-block;
 }
 
 .iphone-sentence {
   font-size: 20px;
-  color: #FFFFFF;
 }
 
 .article-work {
@@ -139,6 +441,7 @@ a {
   font-size: 24px;
 }
 
+/*
 .work-img {
   display: flex;
   flex-wrap: wrap;
@@ -158,6 +461,7 @@ a {
 .work-img figure:nth-last-child(-n+3){
   margin-bottom: 0;
 }
+*/
 
 .work {
   opacity: 0.7;
@@ -168,18 +472,23 @@ a {
   opacity: 1;
 }
 
+/*
 .mail-block {
   display: flex;
   align-items: center;
-  /*margin: 90px;*/
 }
+*/
 
 .mail-block-sentence{
+  /*
   display: inline-block;
+  */
   font-size: 16px;
   width: 100%;
+  /*
   flex: 1;
   margin-right: 90px;
+  */
 }
 
 .mail-block-button {
@@ -213,6 +522,7 @@ a {
   margin-bottom: 70px;
 }
 
+/*
 .skills-box figure {
   display: inline-block;
   margin-right: 180px;
@@ -221,6 +531,7 @@ a {
 .skills-box figure:last-child {
   margin-right: 0px;
 }
+*/
 
 .skills-box p {
   margin-top: 10px;
@@ -234,18 +545,13 @@ a {
   background-color: #f2f2f2;
 }
 
-.sns-contents-ul {
-  text-align: center;
-  padding: 200px 0px;
-}
-
 .sns-contents-ul li {
   display: inline-block;
 }
 
 .icon {
   display: block;
-  width: 185px;
+  /*width: 185px;*/
   font-size: 42px;
   color: #74cfae;
   padding: 45px 0px;
