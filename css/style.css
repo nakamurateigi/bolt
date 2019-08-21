@@ -3,6 +3,14 @@ body {
   font-family: 'Raleway','Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
 @media (max-width: 767px){
   .inner {
     width: 97%;
@@ -25,33 +33,20 @@ body {
     transform: translateY(-50%);
     padding: 10px;
   }
-
   
-  .header-bar-menu {
-    height: 14px;
-    width: 20px;
-    line-height: 10px;
-    position: relative;
-  }
-  
-  .header-bar-menu div {
+  .header-bar div {
     height: 2px;
     width: 20px;
-    position: absolute;
     border-radius: 3px;
     background: #ddd;
   }
 
-  .header-bar-menu div:nth-of-type(1) {
-    top: 0px;
+  .header-bar div:nth-of-type(2) {
+    margin-top: 6px;
   }
 
-  .header-bar-menu div:nth-of-type(2) {
-    top: 6px;
-  }
-
-  .header-bar-menu div:nth-of-type(3) {
-    bottom: 0px;
+  .header-bar div:nth-of-type(3) {
+    margin-top: 6px;
   }
 
   .theme-inner {
@@ -69,19 +64,19 @@ body {
 
   .iphone-inner {
     padding-top: 50px;
+    padding-bottom: 25px;
   }
 
   .iphone-block {
     display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    margin-top: 20px;
     text-align: center;
     box-sizing: border-box;
     color: #FFFFFF;
   }
 
   .iphone-heading {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
   }
 
   .work-img {
@@ -121,7 +116,7 @@ body {
     padding: 50px 15px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    box-sizing: border-box;
   } 
 
   .icon {
@@ -130,7 +125,7 @@ body {
 
 }
 
-@media (min-width: 767px) and (max-width: 1200px){
+@media (min-width: 768px) and (max-width: 1199px){
   .inner {
     width: 97%;
     margin: 0 auto;
@@ -160,19 +155,19 @@ body {
 
   .iphone-inner {
     padding-top: 50px;
+    padding-bottom: 25px;
   }
 
   .iphone-block {
     display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    margin-top: 20px;
     text-align: center;
     box-sizing: border-box;
     color: #FFFFFF;
   }
 
   .iphone-heading {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
   }
 
   .work-img {
@@ -209,7 +204,6 @@ body {
   }
 
   .sns-contents-ul {
-    text-align: center;
     padding: 200px 0px;
   }  
 
@@ -312,7 +306,6 @@ body {
   }
 
   .sns-contents-ul {
-    text-align: center;
     padding: 200px 0px;
   }  
 
@@ -320,10 +313,6 @@ body {
     width: 185px;
   }
   
-}
-
-a {
-  text-decoration: none;
 }
 
 .header {
@@ -377,12 +366,10 @@ a {
 }
 
 .theme-inner {
-  /*padding: 250px 0;*/
   text-align: center;
 }
 
 .theme-inner-bolt {
-  /*font-size: 90px;*/
   font-weight: 700;
   color: #74cfae;
   margin-bottom: 20px;
@@ -398,26 +385,7 @@ a {
   background-color: #74cfae;
   text-align: center;
 }
-/*
-.iphone-inner {
-  display: flex;
-  padding-top: 50px;
-}
 
-.iphone-figure {
-  display: inline-block;
-  width: 348px;
-  text-align: center;
-}
-
-.iphone-block {
-  display: inline-block;
-  padding: 0 70px;
-  vertical-align: top;
-  box-sizing: border-box;
-  flex: 1;
-}
-*/
 .iphone-heading {
   font-size: 24px;
 }
@@ -441,28 +409,6 @@ a {
   font-size: 24px;
 }
 
-/*
-.work-img {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 90px;
-}
-
-.work-img figure {
-  margin-right: 100px;
-  margin-bottom: 80px;
-}
-
-.work-img figure:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.work-img figure:nth-last-child(-n+3){
-  margin-bottom: 0;
-}
-*/
-
 .work {
   opacity: 0.7;
   transition-duration: 0.3s;
@@ -472,23 +418,9 @@ a {
   opacity: 1;
 }
 
-/*
-.mail-block {
-  display: flex;
-  align-items: center;
-}
-*/
-
 .mail-block-sentence{
-  /*
-  display: inline-block;
-  */
   font-size: 16px;
   width: 100%;
-  /*
-  flex: 1;
-  margin-right: 90px;
-  */
 }
 
 .mail-block-button {
@@ -522,17 +454,6 @@ a {
   margin-bottom: 70px;
 }
 
-/*
-.skills-box figure {
-  display: inline-block;
-  margin-right: 180px;
-}
-
-.skills-box figure:last-child {
-  margin-right: 0px;
-}
-*/
-
 .skills-box p {
   margin-top: 10px;
   font-size: 16px;
@@ -545,13 +466,17 @@ a {
   background-color: #f2f2f2;
 }
 
+.sns-contents-ul {
+  text-align: center;
+  font-size: 0;
+}  
+
 .sns-contents-ul li {
   display: inline-block;
 }
 
 .icon {
   display: block;
-  /*width: 185px;*/
   font-size: 42px;
   color: #74cfae;
   padding: 45px 0px;
